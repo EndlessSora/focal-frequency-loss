@@ -23,6 +23,13 @@ The code will be made publicly available. Please stay tuned.
 If you find this work useful for your research, please cite our paper:
 
 ```
+@article{jiang2020focal,
+  title={Focal Frequency Loss for Generative Models},
+  author={Jiang, Liming and Dai, Bo and Wu, Wayne and Loy, Chen Change},
+  journal={arXiv preprint},
+  volume={arXiv:xxxx.xxxxx},
+  year={2020}
+}
 ```
 
 ## License

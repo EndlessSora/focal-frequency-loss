@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+*.swp
+*.pyc
+__pycache__
+*.ipynb*
+*.tar*
+*.zip
+*.pkl
+*.pyc
+*.bak
+metas
+results
+test.sh
+.isort.cfg
+.pre-commit-config.yaml

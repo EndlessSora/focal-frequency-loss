@@ -18,6 +18,29 @@ arXiv preprint, 2020.<br>
 
 The code will be made publicly available. Please stay tuned.
 
+## Results
+
+Here, we show some examples of applying the proposed focal frequency loss (FFL) under diverse settings.
+
+### Image Reconstruction (VAE)
+
+![reconvae](resources/reconvae.jpg)
+
+### Image-to-Image Translation (pix2pix | SPADE)
+
+![consynI2I](resources/consynI2I.jpg)
+
+### Unconditional Image Synthesis (StyleGAN2)
+
+256x256 results (without truncation) and the mini-batch average spectra (adjusted to better contrast):
+
+![unsynsg2res256](resources/unsynsg2res256.jpg)
+
+1024x1024 results (without truncation) synthesized by StyleGAN2 with FFL:
+
+![unsynsg2res1024](resources/unsynsg2res1024.jpg)
+
+
 ## Citation
 
 If you find this work useful for your research, please cite our paper:

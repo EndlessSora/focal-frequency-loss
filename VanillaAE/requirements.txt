@@ -1,0 +1,7 @@
+torch==1.4.0
+torchvision==0.5.0
+tqdm
+opencv-python
+lpips
+pytorch-fid
+focal-frequency-loss

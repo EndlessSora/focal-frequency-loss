@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="focal_frequency_loss",
-    version="0.1.0",
+    version="0.2.0",
     author="Liming Jiang",
     author_email="liming002@ntu.edu.sg",
     description="Focal Frequency Loss for Image Reconstruction and Synthesis - Official PyTorch Implementation",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/EndlessSora/focal-frequency-loss",
     packages=['focal_frequency_loss'],
     python_requires=">=3.5",
-    install_requires=["torch<=1.7.1,>=1.1.0"],
+    install_requires=["torch>=1.1.0", "numpy"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

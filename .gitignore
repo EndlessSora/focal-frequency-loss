@@ -10,10 +10,10 @@ __pycache__
 *.pyc
 *bak
 
-experiments
+experiments*
 datasets/celeba/img_align_celeba
 metas
-results
+results*
 srun_scripts
 *.egg-info/
 dist/

@@ -33,7 +33,7 @@ loss = ffl(fake, real)  # calculate focal frequency loss
 
 **Tips:** 
 
-1. Current supported PyTorch version: `torch<=1.7.1,>=1.1.0`. Warnings can be ignored.
+1. Current supported PyTorch version: `torch>=1.1.0`. Warnings can be ignored. Please note that experiments in the paper were conducted with `torch<=1.7.1,>=1.1.0`.
 2. Arguments to initialize the `FocalFrequencyLoss` class:
 	- `loss_weight (float)`: weight for focal frequency loss. Default: 1.0
 	- `alpha (float)`: the scaling factor alpha of the spectrum weight matrix for flexibility. Default: 1.0
@@ -56,7 +56,7 @@ conda create -n ffl python=3.8.3 -y
 conda activate ffl
 ```
 
-Clone this repo, install PyTorch 1.4.0 (`torch<=1.7.1,>=1.1.0` may also work) and other dependencies:
+Clone this repo, install PyTorch 1.4.0 (`torch>=1.1.0` may also work) and other dependencies:
 
 ```bash
 git clone https://github.com/EndlessSora/focal-frequency-loss.git
@@ -115,7 +115,7 @@ bash scripts/VanillaAE/train/celeba_recon_wo_ffl.sh
 bash scripts/VanillaAE/train/celeba_recon_w_ffl.sh 
 ```
 
-After training, inference on the newly trained models is similar to [Test and Evaluation Metrics](#test-and-evaluation-metrics). The results could be better reproduced on NVIDIA Tesla V100 GPUs.
+After training, inference on the newly trained models is similar to [Test and Evaluation Metrics](#test-and-evaluation-metrics). The results could be better reproduced on NVIDIA Tesla V100 GPUs with `torch<=1.7.1,>=1.1.0`.
 
 ## More Results
 

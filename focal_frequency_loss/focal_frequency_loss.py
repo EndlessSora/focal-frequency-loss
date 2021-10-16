@@ -1,6 +1,10 @@
 import torch
 import torch.nn as nn
 
+# version adaptation for PyTorch > 1.7.1
+if torch.__version__.split('+')[0] > '1.7.1':
+    import torch.fft
+
 
 class FocalFrequencyLoss(nn.Module):
     """The torch.nn.Module class that implements focal frequency loss - a
@@ -45,7 +49,12 @@ class FocalFrequencyLoss(nn.Module):
         y = torch.stack(patch_list, 1)
 
         # perform 2D DFT (real-to-complex, orthonormalization)
-        return torch.rfft(y, 2, onesided=False, normalized=True)
+        if torch.__version__.split('+')[0] > '1.7.1':
+            freq = torch.fft.fft2(y, norm='ortho')
+            freq = torch.stack([freq.real, freq.imag], -1)
+        else:
+            freq = torch.rfft(y, 2, onesided=False, normalized=True)
+        return freq
 
     def loss_formulation(self, recon_freq, real_freq, matrix=None):
         # spectrum weight matrix

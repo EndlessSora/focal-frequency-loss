@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="focal_frequency_loss",
-    version="0.2.0",
+    version="0.3.0",
     author="Liming Jiang",
     author_email="liming002@ntu.edu.sg",
     description="Focal Frequency Loss for Image Reconstruction and Synthesis - Official PyTorch Implementation",

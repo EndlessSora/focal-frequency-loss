@@ -161,3 +161,7 @@ The code of Vanilla AE is inspired by [PyTorch DCGAN](https://github.com/pytorch
 All rights reserved. The code is released under the [MIT License](https://github.com/EndlessSora/focal-frequency-loss/blob/master/LICENSE.md).
 
 Copyright (c) 2021
+
+## Other Implementations
+
+[[**Unofficial TensorFlow Implementation**](https://github.com/ZohebAbai/tf-focal-frequency-loss)] by [ZohebAbai](https://github.com/ZohebAbai)

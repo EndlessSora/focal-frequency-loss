@@ -36,7 +36,7 @@ for i in range(len(opt.metrics)):
 
 if opt.logs is not None:
     root = os.path.split(opt.logs)[0]
-    root = '.' if root == '' else '.'
+    root = '.' if root == '' else root
     os.makedirs(root, exist_ok=True)
 
 # 1. single sample test
